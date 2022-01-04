@@ -13,7 +13,7 @@ const ProfileSetting = () => {
         <div className="w-3/4" >
           {/* profile_setting_heading */}
           <div className="profile_setting_heading pt-8">
-            <h2 className=" text-3xl lg:text-7xl text-white font-normal px-6 w-full lg:w-4/5">
+            <h2 className=" text-xl lg:text-7xl text-white font-normal px-6 w-full lg:w-4/5">
               Profile Settings
             </h2>
           </div>
@@ -38,7 +38,7 @@ const ProfileSetting = () => {
               />
             </div>
             {/* Information_input */}
-            <div className="flex flex-col lg:flex-row w-full lg:w-4/5 pt-14 pb-2">
+            <div className="flex flex-col lg:flex-row w-full lg:w-4/5 pt-6 pb-2">
               {/* first_name */}
               <div className="input_div  w-full lg:w-2/4 lg:pr-8">
                 <label className="common_color text-xl font-medium">
@@ -69,13 +69,13 @@ const ProfileSetting = () => {
               </div>
             </div>
             {/* country_input */}
-            <div className="country_input flex flex-col lg:flex-row w-full lg:w-4/5 py-4 lg:py-0 lg:pt-6">
+            <div className="country_input flex flex-col lg:flex-row w-full lg:w-4/5 py-2 lg:py-0 lg:pt-6">
               {/* Country_name */}
               <div className="input_div w-full lg:w-2/4  lg:pr-8">
                 <label className="common_color text-xl font-medium">
                   Country Name
                 </label>
-                <select className="select_input w-full pt-4">
+                <select className="select_input w-full pt-2 lg:pt-4">
                   <option>Country</option>
                 </select>
               </div>
@@ -84,12 +84,12 @@ const ProfileSetting = () => {
                 <h3 className="common_color text-xl font-medium">City Name</h3>
                 <input
                   placeholder="City"
-                  className="common_input w-full pt-4"
+                  className="common_input w-full pt-2 lg:pt-4"
                 />
               </div>
             </div>
             {/* Username_input */}
-            <div className=" w-full lg:w-4/5 pt-6">
+            <div className=" w-full lg:w-4/5 pt-2 lg:pt-6">
               {/* Username_name */}
               <div className="input_div w-full ">
                 <label className="common_color text-xl font-medium">
@@ -109,7 +109,7 @@ const ProfileSetting = () => {
                   Social Media Accounts
                 </h3>
                 {/* top_images_div */}
-                <div className=" top_images_div w-full lg:w-1/3   flex flex-col lg:flex-row lg:py-4">
+                <div className=" top_images_div w-full lg:w-2/5   flex flex-col lg:flex-row lg:py-4">
                   {/* youtube */}
                   <div className="image_input_div flex items-center py-2 lg:py-0">
                     {/* youtube_image */}
@@ -140,7 +140,7 @@ const ProfileSetting = () => {
                   </div>
                 </div>
                 {/* down_images_div */}
-                <div className=" top_images_div w-full lg:w-1/3 flex flex-col lg:flex-row">
+                <div className=" top_images_div w-full lg:w-2/5 flex flex-col lg:flex-row">
                   {/* hangout */}
                   <div className="image_input_div flex items-center py-2 lg:py-0">
                     {/* hangout_image */}
@@ -202,14 +202,14 @@ const ProfileSetting = () => {
                 />
               </div>
               {/* New_password */}
-              <div className="input_div w-full lg:w-4/5 lg:pt-4 lg:pb-2">
+              <div className="input_div w-full lg:w-4/5 lg:pt-2 lg:pb-2">
                 <label className="common_color text-xl font-medium">
                   New Password
                 </label>
                 <input
                   type="password"
                   placeholder="******"
-                  className="common_input w-full  pt-2"
+                  className="common_input w-full  pt-0 lg:pt-2"
                 />
               </div>
               {/* Confirm_new_password */}
@@ -220,7 +220,7 @@ const ProfileSetting = () => {
                 <input
                   type="password"
                   placeholder="******"
-                  className="common_input w-full  pt-2"
+                  className="common_input w-full  pt-0 lg:pt-2"
                 />
               </div>
             </div>

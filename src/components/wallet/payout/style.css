@@ -1,0 +1,24 @@
+.background_color_div {
+  background-color: #181b28;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.background_color_div .heading_hr_line hr {
+  border-top: 2px solid #4f5055;
+
+}
+.background_color_div .upside_content_div .common_bg_color{
+background-color: #2b2e34;
+}
+.background_color_div .upside_content_div .common_bg_color .button_div button{
+    background-image: linear-gradient(#3e3586, #1b324f);
+    border: 1px solid #484a4f;
+}
+.background_color_div .upside_content_div .common_bg_color .lists_main_div .common_li{
+    color: #999b9d;
+}
+.background_color_div .upside_content_div .common_bg_color .lists_main_div .common_li_green{
+    color: #7a843b;
+}

@@ -120,7 +120,9 @@
   border-top: none;
   border-left: none;
   border-right: none;
+  outline: none;
 }
+
 .background_color_container
   .profile_settings_form
   .input_div
@@ -139,6 +141,7 @@
   border-top: none;
   border-left: none;
   border-right: none;
+  outline: none;
 }
 .background_color_container
   .profile_settings_form
@@ -148,6 +151,7 @@
   color: #5a5b5f;
   font-weight: 400;
   font-size: 14px;
+  outline: none;
 }
 .background_color_container
   .profile_settings_form

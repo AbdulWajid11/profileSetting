@@ -2,10 +2,7 @@
 .background_color_container {
   background-color: #181b28;
 }
-/* .container{
-  width: 1200px;
-  margin: auto;
-} */
+
 .background_color_container .hr_line {
   padding: 25px 0px 0px 0px;
 }
@@ -26,9 +23,9 @@
   .profile_settings_form
   .input_div
   .checkbox_container {
-  display: block;
+  display: flex;
   position: relative;
-  padding-left: 20px;
+  padding-left: 25px;
   cursor: pointer;
   font-size: 16px;
   color: #5a5b5f;
@@ -42,7 +39,6 @@
 .background_color_container
   .profile_settings_form
   .input_div
-  .checkbox_container
   .checkbox_container
   input {
   position: absolute;
@@ -80,19 +76,14 @@
 /* When the checkbox is checked, add a blue background */
 .background_color_container
   .profile_settings_form
-  .input_div
-  .checkbox_container
+  .chechk_box_text
   input:checked
   ~ .checkmark {
   background-color: #181b28;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.background_color_container
-  .profile_settings_form
-  .input_div
-  .checkbox_container
-  .checkmark:after {
+.checkmark:after {
   content: "";
   position: absolute;
   display: none;
@@ -126,12 +117,15 @@
   background-color: #181b28;
   border-bottom: 2px solid #7f797e;
   color: #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 .background_color_container
   .profile_settings_form
   .input_div
   .common_input::placeholder {
-  color: #e9e9ea;
+  color: #5a5b5f;
   font-weight: 400;
   font-size: 18px;
 }
@@ -141,14 +135,17 @@
   .select_input {
   background-color: #181b28;
   border-bottom: 2px solid #7f797e;
-  color: #fff;
+  color: #5a5b5f;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 .background_color_container
   .profile_settings_form
   .country_input
   .select_input
   option {
-  color: #e9e9ea;
+  color: #5a5b5f;
   font-weight: 400;
   font-size: 14px;
 }

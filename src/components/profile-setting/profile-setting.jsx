@@ -8,12 +8,12 @@ const ProfileSetting = () => {
   return (
     <div>
       {/* background_color_container */}
-      <div className="background_color_container lg:h-min ">
+      <div className="background_color_container flex justify-center lg:h-min ">
         {/* main_container */}
-        <div className="container mx-auto" >
+        <div className="w-3/4" >
           {/* profile_setting_heading */}
-          <div className="profile_setting_heading ">
-            <h2 className=" text-5xl lg:text-7xl text-white font-normal px-6 w-full lg:w-4/5">
+          <div className="profile_setting_heading pt-8">
+            <h2 className=" text-3xl lg:text-7xl text-white font-normal px-6 w-full lg:w-4/5">
               Profile Settings
             </h2>
           </div>
@@ -69,7 +69,7 @@ const ProfileSetting = () => {
               </div>
             </div>
             {/* country_input */}
-            <div className="country_input flex flex-col lg:flex-row w-full lg:w-4/5 py-2 lg:py-0 lg:pt-6">
+            <div className="country_input flex flex-col lg:flex-row w-full lg:w-4/5 py-4 lg:py-0 lg:pt-6">
               {/* Country_name */}
               <div className="input_div w-full lg:w-2/4  lg:pr-8">
                 <label className="common_color text-xl font-medium">
@@ -109,7 +109,7 @@ const ProfileSetting = () => {
                   Social Media Accounts
                 </h3>
                 {/* top_images_div */}
-                <div className=" top_images_div w-1/4 lg:w-1/3   flex flex-col lg:flex-row lg:py-4">
+                <div className=" top_images_div w-full lg:w-1/3   flex flex-col lg:flex-row lg:py-4">
                   {/* youtube */}
                   <div className="image_input_div flex items-center py-2 lg:py-0">
                     {/* youtube_image */}
@@ -140,7 +140,7 @@ const ProfileSetting = () => {
                   </div>
                 </div>
                 {/* down_images_div */}
-                <div className=" top_images_div w-1/4 lg:w-1/3 flex flex-col lg:flex-row">
+                <div className=" top_images_div w-full lg:w-1/3 flex flex-col lg:flex-row">
                   {/* hangout */}
                   <div className="image_input_div flex items-center py-2 lg:py-0">
                     {/* hangout_image */}
@@ -179,9 +179,9 @@ const ProfileSetting = () => {
               <button className="text-md font-medium px-4">Reselect</button>
             </div>
             {/* chechk_box_text */}
-            <div className="py-6 lg:py-0 lg:pt-2.5 lg:pb-7">
+            <div className=" py-8 lg:py-0 lg:pt-2.5 lg:pb-7">
               <label class="chechk_box_text ">
-                <span className="relative mt-1 font-medium">
+                <span className="relative mt-1  font-medium">
                   I want to recive Emails from OneUpGaming
                 </span>
                 <input type="checkbox" />

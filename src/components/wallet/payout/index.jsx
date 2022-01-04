@@ -1,6 +1,33 @@
 import React from "react";
 import "./style.css";
 const Payout = () => {
+  let lists = [
+    {
+      id: 1,
+      title: "Date",
+      content: "20.10.2021",
+    },
+    {
+      id: 2,
+      title: "Ammount",
+      content: "52,00 EUR",
+    },
+    {
+      id: 3,
+      title: "WithdrawType",
+      content: "Bank",
+    },
+    {
+      id: 4,
+      title: "Reciver",
+      content: "AT43 39***********",
+    },
+    {
+      id: 5,
+      title: "Status",
+      content: "in progress",
+    },
+  ];
   return (
     <div>
       {/* background_color_div */}
@@ -17,7 +44,7 @@ const Payout = () => {
             {/* left_side_content */}
             <div className="common_bg_color flex justify-center items-center mr-4 lg:w-1/3 rounded-xl">
               {/* content_div */}
-              <div >
+              <div>
                 {/* heading_text */}
                 <div>
                   <h2 className="text-white text-center text-6xl">12 EUR</h2>
@@ -45,96 +72,25 @@ const Payout = () => {
                 </div>
                 {/* lists_main_div */}
                 <ul className="lists_main_div flex px-4  pt-4 pb-2">
-                  {/* Date */}
-                  <ul className="px-6">
-                    <li className="common_li text-center text-lg font-medium">
-                      Date
-                    </li>
-                    <li className="common_li text-base font-medium text-center leading-9">
-                      20.10.2021
-                    </li>
-                    <li className="common_li text-base font-medium text-center leading-9">
-                      20.10.2021
-                    </li>
-                    <li className="common_li text-base font-medium text-center leading-9">
-                      20.10.2021
-                    </li>
-                    <li className="common_li text-base font-medium text-center leading-9">
-                      20.10.2021
-                    </li>
-                  </ul>
-                  {/* Ammount */}
-                  <ul className="px-6">
-                    <li className="common_li text-center text-lg font-medium">
-                      Ammount
-                    </li>
-                    <li className="common_li text-base font-medium text-center leading-9">
-                      52,00 EUR
-                    </li>
-                    <li className="common_li text-base font-medium text-center leading-9">
-                      52,00 EUR
-                    </li>
-                    <li className="common_li text-base font-medium text-center leading-9">
-                      52,00 EUR
-                    </li>
-                    <li className="common_li text-base font-medium text-center leading-9">
-                      52,00 EUR
-                    </li>
-                  </ul>
-                  {/* withdrawType */}
-                  <ul className="px-6">
-                    <li className="common_li text-center text-lg font-medium">
-                      withdrawType
-                    </li>
-                    <li className="common_li text-center text-base font-medium leading-9">
-                      Bank
-                    </li>
-                    <li className="common_li text-center text-base font-medium leading-9">
-                      Bank
-                    </li>
-                    <li className="common_li text-center text-base font-medium leading-9">
-                      Bank
-                    </li>
-                    <li className="common_li text-center text-base font-medium leading-9">
-                      Bank
-                    </li>
-                  </ul>
-                  {/* Reciver */}
-                  <ul className="px-6">
-                    <li className="common_li text-center text-lg font-medium ">
-                      Reciver
-                    </li>
-                    <li className="common_li text-base font-medium text-center leading-9">
-                      AT43 39*****
-                    </li>
-                    <li className="common_li text-base font-medium text-center leading-9">
-                      AT43 39*****
-                    </li>
-                    <li className="common_li text-base font-medium text-center leading-9">
-                      AT43 39*****
-                    </li>
-                    <li className="common_li text-base font-medium text-center leading-9">
-                      AT43 39*****
-                    </li>
-                  </ul>
-                  {/* status */}
-                  <ul className="px-6">
-                    <li className="common_li text-center text-lg font-medium">
-                      Status
-                    </li>
-                    <li className="common_li_green text-base font-medium text-center leading-9">
-                      in Progress
-                    </li>
-                    <li className="common_li_green text-base font-medium text-center leading-9">
-                      in Progress
-                    </li>
-                    <li className="common_li_green text-base font-medium text-center leading-9">
-                      in Progress
-                    </li>
-                    <li className="common_li_green text-base font-medium text-center leading-9">
-                      in Progress
-                    </li>
-                  </ul>
+                  {lists?.map((single) => (
+                    <ul className="px-6">
+                      <li className="common_li text-center text-lg font-medium">
+                        {single.title}
+                      </li>
+                      <li className="common_li text-base font-medium text-center leading-9">
+                        {single.content}
+                      </li>
+                      <li className="common_li text-base font-medium text-center leading-9">
+                        {single.content}
+                      </li>
+                      <li className="common_li text-base font-medium text-center leading-9">
+                        {single.content}
+                      </li>
+                      <li className="common_li text-base font-medium text-center leading-9">
+                        {single.content}
+                      </li>
+                    </ul>
+                  ))}
                 </ul>
               </div>
             </div>
